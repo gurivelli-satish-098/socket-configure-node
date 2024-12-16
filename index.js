@@ -13,11 +13,6 @@ const io = new Server(httpServer, {
   },
 });
 
-// Serve a simple GET endpoint for testing purposes
-app.get("/", (req, res) => {
-  res.send("<h1>Hello, Socket.IO</h1>");
-});
-
 // Handle WebSocket connection
 registerNameSpaces(io);
 
